@@ -1,12 +1,16 @@
 import CreditCard from "@/components/home/credit-card";
 import Header from "@/components/home/header";
-import { View } from "react-native";
+import RecentTransactions from "@/components/home/recent-transactions";
+import { ScrollView, View } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View style={{ flex: 1, backgroundColor: '#fefefe' }}>
+    <ScrollView style={{ flex: 1, backgroundColor: "#fefefe" }}>
       <Header />
-      <CreditCard />
-    </View>
+      <View className="px-4 gap-8 pb-8">
+        <CreditCard />
+        <RecentTransactions />
+      </View>
+    </ScrollView>
   );
 }

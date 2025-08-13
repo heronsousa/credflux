@@ -27,10 +27,7 @@ function CardTitle({
 }: React.ComponentPropsWithoutRef<typeof Text>) {
   return (
     <Text
-      className={cn(
-        'text-2xl font-semibold tracking-tight text-primary',
-        className
-      )}
+      className={cn("text-lg font-semibold text-primary", className)}
       {...props}
     />
   );
@@ -110,10 +107,11 @@ function SimpleCard({
 
 export {
   Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
   SimpleCard,
 };
+

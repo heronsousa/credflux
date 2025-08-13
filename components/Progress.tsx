@@ -25,7 +25,7 @@ function Progress({
     <View className="h-2 bg-gray-200 rounded-full overflow-hidden" {...props}>
       <Animated.View
         style={{ width: widthInterpolated }}
-        className="h-full bg-teal-600 rounded-full"
+        className="h-full bg-[#00B5B8] rounded-full"
       />
     </View>
   );
