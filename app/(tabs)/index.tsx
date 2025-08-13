@@ -1,3 +1,4 @@
+import AccountsList from "@/components/home/accounts-list";
 import CategoryExpenses from "@/components/home/category-expenses";
 import CreditCard from "@/components/home/credit-card";
 import Header from "@/components/home/header";
@@ -10,6 +11,7 @@ export default function HomeScreen() {
       <Header />
       <View className="px-4 gap-8 pb-8">
         <CreditCard />
+        <AccountsList />
         <CategoryExpenses />
         <RecentTransactions />
       </View>
