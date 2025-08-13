@@ -1,3 +1,4 @@
+import CategoryExpenses from "@/components/home/category-expenses";
 import CreditCard from "@/components/home/credit-card";
 import Header from "@/components/home/header";
 import RecentTransactions from "@/components/home/recent-transactions";
@@ -9,6 +10,7 @@ export default function HomeScreen() {
       <Header />
       <View className="px-4 gap-8 pb-8">
         <CreditCard />
+        <CategoryExpenses />
         <RecentTransactions />
       </View>
     </ScrollView>
