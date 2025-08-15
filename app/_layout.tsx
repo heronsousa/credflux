@@ -1,5 +1,6 @@
 import "./global.css";
 
+import { ToastProvider } from "@/components/Toast";
 import {
   DarkTheme,
   DefaultTheme,
@@ -25,11 +26,13 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
+      <ToastProvider position="top">
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+        <StatusBar style="auto" />
+      </ToastProvider>
     </ThemeProvider>
   );
 }
